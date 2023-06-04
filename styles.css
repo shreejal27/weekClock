@@ -7,7 +7,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: yellow;
+  background-color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,42 +24,43 @@
   justify-content: center;
   align-items: center;
   font-size: 16px;
+  color: white;
   
 }
 
 #sun {
   transform: rotate(0deg) translateY(-200px);
-  background-color: red;
+  /* background-color: red; */
 }
 
 #mon {
   transform: rotate(51.43deg) translateY(-200px);
-  background-color: orange;
+  /* background-color: orange; */
 }
 
 #tue {
   transform: rotate(102.86deg) translateY(-200px);
-  background-color: cyan;
+  /* background-color: cyan; */
 }
 
 #wed {
   transform: rotate(154.29deg) translateY(-200px);
-  background-color: green;
+  /* background-color: green; */
 }
 
 #thu {
   transform: rotate(205.71deg) translateY(-200px);
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 #fri {
   transform: rotate(257.14deg) translateY(-200px);
-  background-color: indigo;
+  /* background-color: indigo; */
 }
 
 #sat {
   transform: rotate(308.57deg) translateY(-200px);
-  background-color: violet;
+  /* background-color: violet; */
 }
 
 .line {
@@ -68,7 +69,7 @@
   left: 50%;
   width: 1px;
   height: 50%;
-  background-color: #000;
+  background-color: white;
   transform-origin: top;
   z-index: 1;
 }
@@ -99,4 +100,19 @@
 
 .line:nth-child(7) {
   transform: translate(-50%, -100%) rotate(308.57deg);
+}
+
+.dayIndicator {
+  position: absolute;
+  top: 00%;
+  left: 50%;
+  width: 2px;
+  height: 50%;
+  background-color: yellow;
+  transform-origin: top;
+  z-index: 2;
+}
+
+.dayIndicator:nth-child(1) {
+  transform: translate(-50%, -100%) rotate(10deg);
 }
