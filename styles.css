@@ -1,46 +1,102 @@
 .clock {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    border: 2px solid #000000;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: yellow;
-    color: blue;
-    padding: 5px;
-  }
-  .weekday {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-  }
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.weekday {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
   
-  #sun {
-    transform: rotate(0deg) translateY(-50%);
-  }
-  
-  #mon {
-    transform: rotate(60deg) translateY(-50%);
-  }
-  
-  #tue {
-    transform: rotate(120deg) translateY(-50%);
-  }
-  
-  #wed {
-    transform: rotate(180deg) translateY(-50%);
-  }
-  
-  #thu {
-    transform: rotate(240deg) translateY(-50%);
-  }
-  
-  #fri {
-    transform: rotate(300deg) translateY(-50%);
-  }
-  
-  #sat {
-    transform: rotate(360deg) translateY(-50%);
-  }
+}
+
+#sun {
+  transform: rotate(0deg) translateY(-200px);
+  background-color: red;
+}
+
+#mon {
+  transform: rotate(51.43deg) translateY(-200px);
+  background-color: orange;
+}
+
+#tue {
+  transform: rotate(102.86deg) translateY(-200px);
+  background-color: cyan;
+}
+
+#wed {
+  transform: rotate(154.29deg) translateY(-200px);
+  background-color: green;
+}
+
+#thu {
+  transform: rotate(205.71deg) translateY(-200px);
+  background-color: blue;
+}
+
+#fri {
+  transform: rotate(257.14deg) translateY(-200px);
+  background-color: indigo;
+}
+
+#sat {
+  transform: rotate(308.57deg) translateY(-200px);
+  background-color: violet;
+}
+
+.line {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 1px;
+  height: 50%;
+  background-color: #000;
+  transform-origin: top;
+  z-index: 1;
+}
+
+.line:nth-child(1) {
+  transform: translate(-50%, -100%) rotate(0deg);
+}
+
+.line:nth-child(2) {
+  transform: translate(-50%, -100%) rotate(51.43deg);
+}
+
+.line:nth-child(3) {
+  transform: translate(-50%, -100%) rotate(102.86deg);
+}
+
+.line:nth-child(4) {
+  transform: translate(-50%, -100%) rotate(154.29deg);
+}
+
+.line:nth-child(5) {
+  transform: translate(-50%, -100%) rotate(205.71deg);
+}
+
+.line:nth-child(6) {
+  transform: translate(-50%, -100%) rotate(257.14deg);
+}
+
+.line:nth-child(7) {
+  transform: translate(-50%, -100%) rotate(308.57deg);
+}
