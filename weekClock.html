@@ -4,42 +4,14 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <!-- <div id="clock" class="analog-clock">
-      <div class="weekday" id="sun">Sunday</div>
-      <div class="weekday" id="mon">Monday</div>
-      <div class="weekday" id="tue">Tueday</div>
-      <div class="weekday" id="wed">Wednesday</div>
-      <div class="weekday" id="thu">Thursday</div>
-      <div class="weekday" id="fri">Friday</div>
-      <div class="weekday" id="sat">Saturday</div>
-    </div> -->
-    <div id="chart" class="pie-chart"></div>
-
-    <script type="text/javascript">
-      // Array of colors for the slices
-      const colors = [
-        "#FF0000",
-        "#FFA500",
-        "#FFFF00",
-        "#00FF00",
-        "#0000FF",
-        "#800080",
-        "#FF00FF",
-        "white",
-      ];
-
-      // Calculate the angle for each slice
-      const sliceAngle = 360 / colors.length;
-
-      // Create the slices dynamically
-      const chart = document.getElementById("chart");
-      for (let i = 0; i < colors.length; i++) {
-        const slice = document.createElement("div");
-        slice.classList.add("slice");
-        slice.style.transform = `rotate(${i * sliceAngle}deg)`;
-        slice.style.backgroundColor = colors[i];
-        chart.appendChild(slice);
-      }
-    </script>
+    <div id="clock" class="clock">
+        <span class="weekday" id="sun">Sunday</span>
+        <span class="weekday" id="mon">Monday</span>
+        <span class="weekday" id="tue">Tueday</span>
+        <span class="weekday" id="wed">Wednesday</span>
+        <span class="weekday" id="thu">Thursday</span>
+        <span class="weekday" id="fri">Friday</span>
+        <span class="weekday" id="sat">Saturday</span>
+      </div>
   </body>
 </html>
