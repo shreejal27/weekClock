@@ -1,0 +1,17 @@
+.pie-chart {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    background-color: #f2f2f2;
+    overflow: hidden;
+  }
+  
+  .slice {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 50%, 0 0, 0 100%);
+    border: 1px solid #000000; /* Add border style */
+  }
+  
