@@ -102,17 +102,13 @@
   transform: translate(-50%, -100%) rotate(308.57deg);
 }
 
-.dayIndicator {
+.hand {
   position: absolute;
-  top: 00%;
+  top: 50%;
   left: 50%;
   width: 2px;
-  height: 50%;
-  background-color: yellow;
-  transform-origin: top;
-  z-index: 2;
-}
-
-.dayIndicator:nth-child(1) {
-  transform: translate(-50%, -100%) rotate(10deg);
+  height: 170px;
+  background-color: white;
+  transform-origin: bottom;
+  transform: translate(-50%, -100%) rotate(0deg); 
 }
