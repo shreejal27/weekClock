@@ -1,4 +1,3 @@
-
     const hand = document.querySelector('.hand');
     const currentDate = new Date();
     var currentHour = currentDate.getHours();
@@ -9,42 +8,34 @@
     const onepart = 51.4285;
     const halfOfOnePart = 25.71425;
 
+    let degree = 0;
+
     switch (day) {
       case 'Sunday':
-        var degree = 0;
-        showTime(degree);
-
+         degree = 0;
         break;
       case 'Monday':
-        var degree = 51.43;
-        showTime(degree);
+         degree = 51.43;
         break;
       case 'Tuesday':
-        var degree = 102.86;
-        showTime(degree);
+         degree = 102.86;
         break;
       case 'Wednesday':
-        var degree = 154.29;
-        showTime(degree);
+         degree = 154.29;
         break;
       case 'Thursday':
-        var degree = 205.72;
-        showTime(degree);
+         degree = 205.72;
         break;
       case 'Friday':
-        var degree = 257.15;
-        showTime(degree);
+         degree = 257.15;
         break;
       case 'Saturday':
-        var degree = 308.58;
-        showTime(degree);
-        break;
-      default:
-        var degree = 0;
+         degree = 308.58;
         break;
     }
     // hand.style.transform = `translateX(-50%) translateY(-100%) rotate(${degree}deg)`;
-    
+    showTime(degree);
+
     function showTime(degree) {
       // console.log(degree);
       var midpoint = degree;
