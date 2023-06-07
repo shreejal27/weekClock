@@ -4,9 +4,16 @@
     const options = { weekday: 'long' };
     const day = currentDate.toLocaleString('en-US', options);
 
+    const handdeg = 2.14291;
+    const onepart = 51.4285;
+    const halfOfOnePart = 25.71425;
+
     switch (day) {
       case 'Sunday':
         var degree = 0;
+        var startdeg =-154.29;
+        var enddeg =25.715;
+
         break;
       case 'Monday':
         var degree = 51.43;
